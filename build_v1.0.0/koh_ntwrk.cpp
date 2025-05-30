@@ -200,9 +200,9 @@ int denormalize(vector<vector<int>>fin_clusts, vector<vector<double>>clusters) {
         fin_charcs.push_back(temp_charcs);
     }
 
-    cout << "\nÕàðàêòåðèñòèêà ëþäåé: \n";
+    cout << "\nÃ•Ã Ã°Ã ÃªÃ²Ã¥Ã°Ã¨Ã±Ã²Ã¨ÃªÃ  Ã«Ã¾Ã¤Ã¥Ã©: \n";
     for (int i = 0;i < fin_charcs.size();i++) {
-        cout << "\nÊËÀÑÒÅÐ: " << main_clust[i] << endl;
+        cout << "\nÃŠÃ‹Ã€Ã‘Ã’Ã…Ã: " << main_clust[i] << endl;
         cout << endl;
         for (string str : fin_charcs[i]) cout << str << endl;
         cout << endl;
@@ -256,7 +256,7 @@ double clustering(int clusters, vector<vector<int>>& pers_inclust, vector<vector
 
     namespace fs = std::filesystem;
 
-    string directory_path = "C:\\dada";
+    string directory_path = "C:\\data";
 
     int a = 0;
 
@@ -290,7 +290,7 @@ double clustering(int clusters, vector<vector<int>>& pers_inclust, vector<vector
         }
         vector<vector<double>>norm_values = norm_resp(data);
 
-        cout << "Èíôîðìàöèÿ îáðàáîòàíà" << endl;
+        cout << "ÃˆÃ­Ã´Ã®Ã°Ã¬Ã Ã¶Ã¨Ã¿ Ã®Ã¡Ã°Ã Ã¡Ã®Ã²Ã Ã­Ã " << endl;
 
         for (int i = 0; i < clusters; i++) {
 
