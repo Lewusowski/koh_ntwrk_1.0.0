@@ -133,9 +133,6 @@ vector<vector<double>> norm_resp(vector<vector<string>>data) {
             if (j.find('\n') != string::npos) {
                 j = j.substr(0, j.find('\n'));
             }
-
-            if (j == "") continue;
-
             vector<int> charcs_pos = ind_in_poll_resp(j);
 
             double norm_charch = (charcs_pos[0] * 1.0 - 0) / (charcs_pos[1] - 0);
@@ -276,7 +273,7 @@ double clustering(int clusters, vector<vector<int>>& pers_inclust, vector<vector
 
             if (file.is_open()) {
 
-                for (int i = 0; i <= 13; i++) {
+                for (int i = 0; i <= 11; i++) {
 
                     string temp_data{};
 
